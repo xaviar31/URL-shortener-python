@@ -17,27 +17,37 @@ This project is licensed under the MIT license.
 
 ## Acknowledgments
   - Thank you to the Flask and PythonAnywhere communities for their excellent resources!
+
+
           
 ## Contribution
   - Feel free to enhance, customize, and rename this project for your own personal uses!
   1.) **Fork the Repository:**
     - Click the "Fork Button at the top right of this repository to create your own copy of the project"
+      
   2.) **Clone your Fork:**
     - Clone your forked repository to your local machine:
       git clone https://github.com/yourusername/url-shortener.git
+      
   3.) **Create a New Branch:**
     - Create a new Git Branch for your changes.
       git checkout -b feature/new-feature
+      
   4.) **Make your own changes:**
     - Customize the URL shortener to add new features, and improve it!
+    
   5.) **Test and Commit Changes:**
     - Ensure changes are tested with a clear and concise git message:
       git commit -m "Added new feature: [Feature Desc.]
+      
   6.) **Push Changes:**
       git push origin feature/new-feature
+      
   7.) **Make Pull Request:**
       - Visit original repository and click "New Pull Request"
       - Provide title and description of changes.
       - Will personally review!
+      
   8.) **Keep Updated:**
+  
 I appreciate and welcome anyone who would like to contribute to this URL Shortener!
