@@ -1,0 +1,73 @@
+/* Center-align all text and content */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center-align the form and its elements */
+form {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* Style the input fields and labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="url"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style the message text */
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Style the short URL link */
+#short-url {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #007BFF;
+    margin-right: 10px;
+}
+
+/* Style the "Copy URL" button */
+#copy-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style the "Copy URL" button on hover */
+#copy-button:hover {
+    background-color: #0056b3;
+}

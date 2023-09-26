@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    <form method="POST">
+        <label for="long_url">Enter a Long URL:</label>
+        <input type="url" id="long_url" name="long_url" required>
+        <br>
+        <label for="custom_alias">Custom Alias (optional):</label>
+        <input type="text" id="custom_alias" name="custom_alias">
+        <br>
+        <input type="submit" value="Shorten URL">
+    </form>
+    {% if message %}
+        <p>Shortened URL: <a id="short-url" href="{{ message }}" target="_blank">{{ message }}</a></p>
+        <button id="copy-button" onclick="copyToClipboard()">Copy URL</button>
+    {% endif %}
+    
+    <script>
+        function copyToClipboard() {
+            const shortUrl = document.getElementById('short-url').href;
+            const tempInput = document.createElement('input');
+            tempInput.value = shortUrl;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('URL copied to clipboard!');
+        }
+    </script>
+</body>
+</html>
